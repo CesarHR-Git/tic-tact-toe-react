@@ -1,0 +1,107 @@
+/*======================== 
+    0X: Library
+======================== */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap');
+
+
+/*======================== 
+    0X: Values
+======================== */
+:root {
+    --primaryColor: #333233;
+    --white: #FFF;
+}
+
+/*======================== 
+    0X: General
+======================== */
+html {
+    font-size: 65%;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: var(--primaryColor);
+    color: #FFF;
+    font-size: 18px;
+}
+
+/*========================
+    01: Game
+======================== */
+.title {
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 8rem;
+}
+
+.square {
+    border: 3px solid #FFF;
+    background: transparent;
+    width: 100px;
+    height: 100px;
+    line-height: 34px;
+    float: left;
+    cursor: pointer;
+    color: var(--white);
+    font-size: 45px;
+}
+
+.board-row:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.game {
+    display: flex;
+    flex-direction: row;
+    column-gap: 18rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-body {
+    border-radius: 15px;
+    transition: all .3s;
+    background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
+}
+
+.card-container {
+    width: 270px;
+    height: 400px;
+    transition: all .2s;
+    padding: 2rem;
+    border-radius: 12px;
+    background-color: #1a1a1a;
+}
+
+.card-container:hover {
+    transform: scale(0.98);
+    border-radius: 15px;
+}
+
+.game-info h3 {
+    text-align: center;
+}
+
+.history-info {
+    background: transparent;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    color: var(--white);
+}
+
+.list-history {
+    margin: .15rem;
+}
